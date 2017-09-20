@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name:Haoting Zhuang 
+name: Haoting Zhuang 
 
 # Short bio or description (displayed in the header)
 description: Data Science Candidate
@@ -21,7 +21,7 @@ footer-links:
   flickr:
   github: barryclark/jekyll-now
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/haoting-zhuang-p-e/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: jekyllrb
