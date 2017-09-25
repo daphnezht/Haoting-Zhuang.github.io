@@ -21,8 +21,12 @@ From the chart we could see that the top 55 stations take more than 50% of the t
 ### When does the most traffic appear?
 Further looking into the data, we chose the top 5 stations and for each of the station, we ploted how the traffic volume change within one calendar week for all the 4 weeks that we are investigating. We found there's consistant pattern between different weeks and across different stations. The traffic volume peak time always appear during 4~8 pm when people are out of work and heading back home. At peak, there are around 150 to 290 passengers pass by per minute. 
 
-![]({{site.baseurl}}/images/34_st-herald_sq_4hr_480?raw=true)
+![](/images/34_st-herald_sq_4hr_480.png?raw=true)
 
 ### Recommendation & Action Plan
-Since the peak time appears at the evening and people may tend to have more time to stop and chat. We recommend to target the commuters and assign volunteers during weekday evening time. By using a rule of thumb of 1 volunteer to 50 passengers per minutes. We recommend to have 3 to 5 volunteers per team. We then chose the top 25 entrances with the highest traffic and put together an action plan shown in the table below. In the action plan, we recommend to recruit 5 teams of volunteers (25 people in total). Each team will go to a different station entrance on each workday. This way, we will cover the top 25 entrances within one week and at the same time utilize the volunteer team efficiently.
+Since the peak time appears at the evening and people may tend to have more time to stop and chat. We recommend to target the commuters and assign volunteers during weekday evening times. By using a rule of thumb of 1 volunteer to 50 passengers per minutes. We recommend to have 3 to 5 volunteers per team. We then chose the top 25 entrances with the highest traffic and put together an action plan shown in the table below. In the action plan, we recommend to recruit 5 teams of volunteers (25 people in total). Each team will go to a different station entrance on each workday. This way, we will cover the top 25 entrances within one week and at the same time utilize the volunteer team efficiently.
 
+![](/images/ActionPlan.png?raw=true)
+
+### Additional Works
+This project was a introductory exploratory data analysis on MTA data. With more time we would have taken more factors into consideration and refine the recommendation that we have. We would look into demographic information and business registration information to target tech business areas of NYC.
