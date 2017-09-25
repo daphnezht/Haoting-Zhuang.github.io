@@ -4,10 +4,10 @@ title: First Data Science Project at Metis
 ---
 
 This Monday, I started my first week of this intense yet exciting 12-week Data Science Bootcamp with Metis. 
-Right away, we were divided into group of 3 to start working on our first project which will be due in 4 days applying the knowledge/tools we just learned. The objective of the project was to make recommendation to a hypothetical client "Women Tech, Women Yes" on how they should allocate their volunteers for their upcoming fund raising event, the WTWY Gala, so that they could optimize collection of signatures and gala attendance.
+Right away, we were divided into groups of 3 to start working on our first project which will be due in 4 days applying the knowledge/tools we just learned. The objective of the project was to make recommendation to a hypothetical client "Women Tech, Women Yes" on how they should allocate their volunteers for their upcoming fund raising event, the WTWY Gala, so that they could optimize collection of signatures and gala attendance.
 
 ### Data Collection and Cleaning
-Since the gala will be hold early summer next year, we retrieved published data from New York City Metro Transit Authority data in May 2017 to minimize any noise that could be introduced by seasonal disturbance. The raw data from MTA record the cumulative counts of entries/exits every 4 hours on a turnstile level. We first process the data to show the number of entries/exits in every 4 hours time period. When we looked at the data, we noticed there are a lot of big outliers as shown in the graph below. I discovered that these were caused by regular device reset and unexpected malfunction. After setting up threshold and eliminating these outliers(less than 0.08% of the raw data points), our data look much more reasonable. 
+Since the gala will be hold early summer next year, we retrieved published data from New York City Metro Transit Authority data in May 2017 to minimize any noise that could be introduced by seasonal disturbance. The raw data from MTA record the cumulative counts of entries/exits every 4 hours on a turnstile level. We first processed the data to show the number of entries/exits in every 4 hours time period. When we looked at the data, we noticed there are a lot of big outliers as shown in the graph below. I discovered that these were caused by regular device reset and unexpected malfunction. After setting up threshold and eliminating these outliers(less than 0.08% of the raw data points), our data look much more reasonable. 
 
 ![](/images/DataCleaning.png?raw=true)
 
@@ -16,7 +16,7 @@ Next step, we group and sum the cleaned data by station for total entries during
 
 ![](/images/AllStationHist1.png?raw=true)
 
-From the chart we could see that the top 55 stations take more than 50% of the total traffic. And the top 150 stations take more than 80%. So we could that the top stations are the ones we should focus on.
+From the chart we could see that the top 55 stations take more than 50% of the total traffic. And the top 150 stations take more than 80%. So we know that the top stations are the ones we should focus on.
 
 ### When does the most traffic appear?
 Further looking into the data, we chose the top 5 stations and for each of the station, we ploted how the traffic volume change within one calendar week for all the 4 weeks that we are investigating. We found there's consistant pattern between different weeks and across different stations. The traffic volume peak time always appear during 4~8 pm when people are out of work and heading back home. At peak, there are around 150 to 290 passengers pass by per minute. 
