@@ -44,16 +44,18 @@ months in the city of n Seattle, Kirkland, Bellevue and Redmond.
 
 ## Results and findings
 
-###Price Model 
+### Price Model 
  * Result of Lasso 3-fold cross validation
-     Polynomial degree = 2
-     Alpha: 1e-8
-     Train R^2:  0.83
-     Train SSE: 0.046
-     Test R^2:  0.79
-     Test SSE: 0.055
-![](/images/Price_model?raw=true)
-  * Findings:
+    Polynomial degree = 2
+    Alpha: 1e-8
+    Train R^2:  0.83
+    Train SSE: 0.046
+    Test R^2:  0.79
+    Test SSE: 0.055
+
+![](/images/Price_model.png?raw=true)
+  
+    * Findings:
     As we could see from the residual plot, the model tend to predict too low
     for the lower price house and too high for the higher price house. This
 first may due to that I only have 100 data points out of 4290 for house above 2
@@ -61,7 +63,7 @@ million. So more data points of higher house price need to included to refine th
 Also, it might be a good idea to have two individual models to predict house in
 lower/higher range. 
 
-###Appreciation Model
+### Appreciation Model
   * Result of Lasso 3-fold cross validation:
     Polynomial degree = 2
     Alpha: 1e-8
@@ -70,7 +72,7 @@ lower/higher range.
     Test R^2:  0.49
     Test SSE: 0.00085
 
-![](/images/Appreciation_model?raw=true)
+![](/images/Appreciation_model.png?raw=true)
   * Findings:
     1. Appreication is strongly dominated by Zip code:
       The features that have biggest positive/negative coefficent in the appreciation model aligned with the
@@ -82,11 +84,12 @@ heatmap for the area regards to annual appreciation in this data set.
 ![](/images/Top&BottomZip.png?raw=true)
 ![](/images/heatmap.png?raw=true)
 
+
     2. Numeric features has different effects in different zip codes:
-      For example, based on the coefficents in my final model, being a single family home will
-increase the appreciation by 2.1%. Being a home in zip code 98126 will decrease
-my appreciation prediction by 2.6%  Yet, being a Single family home in zip code
-98126 will increase the prediction by 8.6%.
+    For example, based on the coefficents in my final model, being a single family home will
+    increase the appreciation by 2.1%. Being a home in zip code 98126 will decrease
+    my appreciation prediction by 2.6%  Yet, being a Single family home in zip code
+    98126 will increase the prediction by 8.6%.
     
 ## Additional Works
 For future works, I would like to first further refine my model by collecting
