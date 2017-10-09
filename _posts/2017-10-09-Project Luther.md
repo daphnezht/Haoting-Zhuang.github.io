@@ -90,12 +90,6 @@ heatmap for the area regards to annual appreciation in this data set.
 
 ![](/images/Top&BottomZip.png?raw=true)
 ![](/images/heatmap.png?raw=true)
-
-    2. Numeric features has different effects in different zip codes:
-    For example, based on the coefficents in my final model, being a single 
-    family home will increase the appreciation by 2.1%. Being a home in zip 
-    code 98126 will decrease my appreciation prediction by 2.6%  Yet, being
-     a Single family home in zip code 98126 will increase the prediction by 8.6%.
     
 ## Additional Works
 For future works, I would like to first further refine my model by collecting
