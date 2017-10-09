@@ -4,7 +4,7 @@ title: Greater Seattle House Price & Appreciation
 ---
 The second project is about applying the knowledge that we learned about linear regression. 
 
-### Why this topic?
+## Why this topic?
 
 My husband and I recently moved to Seattle. Last year, when we started to
 search for our new home, we had a hard time comparing different properties and
@@ -18,7 +18,7 @@ investor make better decisions.
 
 ![](/images/Redfin_chart.png?raw=true) 
 
-### Data Source and size
+## Data Source and size
 
 Using selenium and beautiful soup, I scraped my data from www.redfin.com for all properties sold in the past 3
 months in the city of n Seattle, Kirkland, Bellevue and Redmond.
@@ -32,7 +32,7 @@ months in the city of n Seattle, Kirkland, Bellevue and Redmond.
      feet, School Avg Rating, Year Built, Lot size   
    * 2 Categorical ones: Property Type,  Zip Code
 
-### Modeling steps
+## Modeling steps
 
 1. Eliminate outliers & transform skewed data
 2. Standardized numeric features
@@ -42,9 +42,9 @@ months in the city of n Seattle, Kirkland, Bellevue and Redmond.
 6. Use cross validation to determine the ideal alpha value in regulation tool
 (Lasso, Ridge) to minimize test error
 
-### Results and findings
+## Results and findings
 
-* Price Model 
+###Price Model 
  * Result of Lasso 3-fold cross validation
      Polynomial degree = 2
      Alpha: 1e-8
@@ -61,7 +61,7 @@ million. So more data points of higher house price need to included to refine th
 Also, it might be a good idea to have two individual models to predict house in
 lower/higher range. 
 
-* Appreciation Model
+###Appreciation Model
   * Result of Lasso 3-fold cross validation:
     Polynomial degree = 2
     Alpha: 1e-8
@@ -72,7 +72,7 @@ lower/higher range.
 
 ![](/images/Appreciation_model?raw=true)
   * Findings:
-    * Appreication is strongly dominated by Zip code:
+    1. Appreication is strongly dominated by Zip code:
       The features that have biggest positive/negative coefficent in the appreciation model aligned with the
 zip codes with the top/bottom average annual appreciation. Below map shows the top 5 (A-E) and the bottom 2 zip codes(G & F) in terms of average annual appreciaton.
 It's interesting to see that the top ones are all on the east side close to the
@@ -82,20 +82,20 @@ heatmap for the area regards to annual appreciation in this data set.
 ![](/images/Top&BottomZip.png?raw=true)
 ![](/images/heatmap.png?raw=true)
 
-    * Numeric features has different effects in different zip codes:
+    2. Numeric features has different effects in different zip codes:
       For example, based on the coefficents in my final model, being a single family home will
 increase the appreciation by 2.1%. Being a home in zip code 98126 will decrease
 my appreciation prediction by 2.6%  Yet, being a Single family home in zip code
 98126 will increase the prediction by 8.6%.
     
-### Additional Works
+## Additional Works
 For future works, I would like to first further refine my model by collecting
 more data and identify more featues. 
 Second, I would like to perform renting vs buying benefit analysis and ROI
 (return on investment) so that home buyer/investor can easily compare two properties in terms of their financial values. In order to do that, I will incorporate renting information (e.g., average rent in the
 closeby area), mortgage rate, tax, maintenance expense into consideration.
 
-### Leasons Learned
+## Leasons Learned
 I have learned a lot throughout this process.There's been road blocks and
 several back and forths. 
 Here's some of big take-aways. 
