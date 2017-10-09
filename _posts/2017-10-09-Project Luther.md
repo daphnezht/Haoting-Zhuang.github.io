@@ -78,15 +78,24 @@ lower/higher range.
     1. Appreication is strongly dominated by Zip code:
       The features that have biggest positive/negative coefficent in the appreciation model aligned with the
 zip codes with the top/bottom average annual appreciation. Below map shows the top 5 (A-E) and the bottom 2 zip codes(G & F) in terms of average annual appreciaton.
-It's interesting to see that the top ones are all on the east side close to the
+It's interesting to see that the top ones are all on the east side close to
 Lake Washington, while the bottom 2 is the Pike Market area. Also find a
 heatmap for the area regards to annual appreciation in this data set.   
+
+    2. Numeric features has different effects in different zip codes:
+    For example, based on the coefficents in my final model, being a single 
+    family home will increase the appreciation by 2.1%. Being a home in zip 
+    code 98126 will decrease my appreciation prediction by 2.6%  Yet, being 
+    a Single family home in zip code 98126 will increase the prediction by 8.6%.
 
 ![](/images/Top&BottomZip.png?raw=true)
 ![](/images/heatmap.png?raw=true)
 
     2. Numeric features has different effects in different zip codes:
-      For example, based on the coefficents in my final model, being a single family home will increase the appreciation by 2.1%. Being a home in zip code 98126 will decrease my appreciation prediction by 2.6%  Yet, being a Single family home in zip code 98126 will increase the prediction by 8.6%.
+    For example, based on the coefficents in my final model, being a single 
+    family home will increase the appreciation by 2.1%. Being a home in zip 
+    code 98126 will decrease my appreciation prediction by 2.6%  Yet, being
+     a Single family home in zip code 98126 will increase the prediction by 8.6%.
     
 ## Additional Works
 For future works, I would like to first further refine my model by collecting
