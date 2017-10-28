@@ -30,23 +30,26 @@ I first cleaned individual tables and then utilized AWS and Postgres to merge th
 
 After trying different classification models include KNN, Random Forest, Logistic Regression, Naive Bayes, SVM, Gradient Boosting and Ada Boosting, I found Ada Boosting gave me the best & most consistent results. Below shows the ROC of the test set (0.3 train/test split).
 ![](/images/Modeling_Result.png?raw=true)
-As you can see the AUC is 0.824. Since my data is so biased(), The orginal prediction model output from scikit learn pretty much is guessing every city as not having a mass shooting event. :scream: That's not gonna help me find the high risk cities.
+As you can see the AUC is 0.824. Since my data is so biased(only 0.1% of data point is True), The orginal prediction model output from scikit learn pretty much is guessing every city as not having a mass shooting event. :(
+That's not gonna help me find the high risk cities.
 So along the ROC curve, I picked a cut point that provides a reasonable balance between the false positive rate and the true positive rate. This way, I will be able to identify 75% of the cities that actually had a mass shooting occurred. 
 
 ## Findings
 
 * Top Features
+
   In this model, the top predictors based on feature importances are Population (importance = 0.32), Crime rate (0.21), Crime Number (0.18) and Total Number of Firearm laws (0.06). 
   To see how these feature impact the risk of mass shooting occurance, I randomly selected a data point, fix the value of all the other feature and only change the feature in concern. Then I put the data point with modified features into the model, and stored the y proba. Last, for easier explaination, I have scaled the y proba and turn it into a risk score from 0 to 100 (The model will flag the data point as mass shooting had occurred when risk score reaches above 88.4). 
   Below are the plots for these features that I looked at. 
 
 ![](/images/population.png?raw=true)
-![](/images/CrimeRate.png?raw=true)
 ![](/images/gunlaw.png?raw=true)
+![](/images/CrimeRate.png?raw=true)
   
-  As you can see, as population increase, the risk score increase but soon reached a plateau around 100,000 people. Similar pattern is observed for crime rate. Total # of Firearm laws doesn't seem to have a great effect on the risk score. The 
+  As you can see, as population increase, the risk score increase but soon reached a plateau around 100,000 people. Similar pattern is observed for crime rate. Total # of Firearm laws doesn't seem to have a great effect on the risk score. As the # of the gun laws increase, the risk first dropped and for some reason jump back later on. I will look into this more closely in the future.
 
 * Top Firearm Laws Predictors
+
   After that, I identified the top 4 laws predictor based on feature importance. And made the table below to show in the year of 2014 whether these laws were in place for the most/least risky state. 
   As you could see there is a slight tendency that the presence of law decrease the risk of having mass shootings.
 ![](/images/TopLawPredictors.png?raw=true)
@@ -61,14 +64,18 @@ So along the ROC curve, I picked a cut point that provides a reasonable balance 
   ![](/images/Top_Bottom_Risky.png?raw=true)
   
   Population:
-   Top 5 cities range from 575k to 1.6 million
-   Bottom 5 cities range from 10k to 16k
+
+   Top 5 cities range from 575k to 1.6 million.
+
+   Bottom 5 cities range from 10k to 16k.
 
   Crime Rate:
-   Top 5 cities range from 603 to 867
-   Bottom 5 cities range from 34 to 50
+
+   Top 5 cities range from 603 to 867.
+
+   Bottom 5 cities range from 34 to 50.
   
-  The stats and chart does correspond to the findings for the features. 
+  The stats and chart does correspond to the findings I had earlier for the features. 
 
 ## Future Works 
 If I have additional time, I would like to first further refine my model by trying under-sampling & ensambling different models. I would also try to collect more data and incorporate more features. 
