@@ -26,7 +26,7 @@ I scraped my data around 900 active job postings from glassdoor.com using the ke
 
 * Topic Modeling:
 
-1. 
+1. Initially 
 
 
 
@@ -41,6 +41,15 @@ I scraped my data around 900 active job postings from glassdoor.com using the ke
 * Recommendation System
 
 
+| Cosine Similarity| Job Title     | Company  | Industry  | Job Highlight  |
+|                  |               |          |           |                |
+| ---------------- |:------------- | :--------|:----------|:---------------|
+|  Human Computer Interaction and Visualization Scientist
+                |               |          |           |                |
+|                  |               |          |           |                |
+|                  |               |          |           |                |
+|                  |               |          |           |                |
+|                  |               |          |           |                |
 
 ## Future Works 
 
