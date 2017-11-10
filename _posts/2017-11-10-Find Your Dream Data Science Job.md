@@ -26,10 +26,8 @@ I scraped my data around 900 active job postings from glassdoor.com using the ke
 
 ## Findings
 
-[Tableau Story Book](https://public.tableau.com/views/Metis-Project4/FindYourDreamJobinDataScience?:embed=y&:display_count=yes&publish=yes)
-
 <iframe src="https://public.tableau.com/views/Metis-Project4/FindYourDreamJobinDataScience?:embed=y&:display_count=yes&publish=yes"
- width="645" height="955"></iframe>
+ width="700" height="1200"></iframe>
 
 
 
