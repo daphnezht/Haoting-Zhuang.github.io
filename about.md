@@ -10,7 +10,7 @@ I would love to connect and talk to people who share the same interest with me. 
 
 ### More Information
 
-Before getting into the field of Data Science, I had worked 6 years in Engineering Construction company as a Control Systems Engineer and a Project Controls Engineer. I spent most my time on engineering design and project management for projects of building LNG (Liquefied Natural Gas) plants around the world.
+Before getting into the field of Data Science, I had worked 6 years in Engineering Construction company as a Control Systems Engineer and a Project Controls Engineer. I spent most of my time on engineering design and project management for projects of building LNG (Liquefied Natural Gas) plants around the world.
 
 ### Contact me
 
