@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, My name is Haoting Zhuang. I'm an aspiring Data Scientist who currently live in Greater Seattle area. I am passiontate about data analysis & interpretation and am always earger to learn new knowledge and techniques in this area. 
+Hi, My name is Haoting Zhuang. I'm an aspiring Data Scientist who currently live in Greater Seattle area. I am passionate about data analysis & interpretation and am always earger to learn new knowledge and techniques in this area. 
 
 I would love to connect and talk to people who share the same interest with me.  Feel free to connect with me on LinkedIn or email me directly.
 
