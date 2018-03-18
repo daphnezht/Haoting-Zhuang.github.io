@@ -42,14 +42,10 @@ Hosted in AWS,
 
 2. I tried a few techniques include LDA, LSA and NMF. And the one give me the best result is 4-topic-split using NMF. Below I have created a Tableau story book showing the results of exploration data analysis and topic modeling. 
  
-Findings
-
-[Here is also the link to my Tableau storybook if you have trouble viewing](https://public.tableau.com/views/Metis-Project4/FindYourDreamJobinDataScience?:embed=y&:display_count=yes&publish=yes)
-
 
 <iframe
 src="https://docs.google.com/presentation/d/e/2PACX-1vTOdikurq40w-BGsprz3WG3M3OHa9FKh9GlJljHdHeRAYlh8XnTkk7JaGUzTx-KYTDD6UEBkGzOZPAX/embed?start=true&loop=false&delayms=3000"
-frameborder="0" width="960" height="569" allowfullscreen="true"
+frameborder="0" width="480" height="299" allowfullscreen="true"
 mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 * Reco
