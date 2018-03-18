@@ -1,24 +1,32 @@
 ---
 layout: post
-title: NLP Project - Find Your Dream Job in Data Science
+title: E-commerce Product Classification With Images
 ---
-Hard to believe that 2/3 of the bootcamp has already past. As the graduation day coming closer, I start to think about job searching. 
+## Background
+Retail e-commerce salesIn 2016, online sales of physical goods
+amounted to 360.3 billion US dollars and are projected to surpass 603.4 billion
+US dollars in 2021. Apparel and accessories retail e-commerce in the U.S. is
+projected to generate over 121 billion U.S. dollars in revenue by 2021. The
+United States rank behind several countries in terms of e-commerce sales as
+percentage of total retail sales - in 2016, almost a fifth of China's retail
+sales occurred via the internet, compared to only 8.1 percent in the United
+States. The UK, South Korea, and Denmark are also ahead of the U.S. in terms of
+retail e-commerce share.
 
-It's not an easy process. By doing this NLP project, I hope I could have more insights on:
-1. Which are industries that have data science related posting?
-2. Who are the top employers?
-3. What the key skill sets that they are looking for?
-4. How to efficiently find the jobx that fits me the best?
-
+[Here is link to my final
+presentation](https://docs.google.com/presentation/d/1utLNLdbPA99wjvpaowzLjDgFdhLrFbPgyfUjVZvLrJQ/edit?usp=sharing)
 
 ## Data Source and size
 
-I scraped my data around 900 active job postings from glassdoor.com using the key word "Data Scientist" in Seattle area. For each posting, I obtained the job description, glassdoor estimate salary and several information about the employers include rating, size & revenue. 
+The image dataset is from a Kaggle dataset with 
 
+## AWS
+
+Hosted in AWS, 
 
 ## Modeling Steps   
 
-* Text Pre-processing:
+* Transfer Learning:
 
 1. Retrieved all the skill sets related information and counted how frequently each skill appears in the job description(e.g., Python, R).
 2. Retrieved sentences which mentioned "year...experience". From there, got the required number of years of experience.
@@ -36,12 +44,15 @@ I scraped my data around 900 active job postings from glassdoor.com using the ke
  
 Findings
 
-<iframe src="https://public.tableau.com/views/Metis-Project4/FindYourDreamJobinDataScience?:embed=y&:display_count=yes&publish=yes"
- width="700" height="1200"></iframe>
-
 [Here is also the link to my Tableau storybook if you have trouble viewing](https://public.tableau.com/views/Metis-Project4/FindYourDreamJobinDataScience?:embed=y&:display_count=yes&publish=yes)
 
-* Recommendation System
+
+<iframe
+src="https://docs.google.com/presentation/d/e/2PACX-1vTOdikurq40w-BGsprz3WG3M3OHa9FKh9GlJljHdHeRAYlh8XnTkk7JaGUzTx-KYTDD6UEBkGzOZPAX/embed?start=true&loop=false&delayms=3000"
+frameborder="0" width="960" height="569" allowfullscreen="true"
+mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+* Reco
 
 I read in my resume in plain text format, did the same text processing as the job descriptions, and then I calculated the cosine similarity between my resume and all the job descriptions. Below are the ones with top similarity scores.
 
@@ -50,9 +61,6 @@ I read in my resume in plain text format, did the same text processing as the jo
 ## Future Works 
 
 In the future, I would like to:
-1. Do more data exploration analysis
-2. Build UI for job recommendation system
-3. Refine recommendation system by incorporating user application history
-
-
-
+1. Ensemble the NLP and Image models together to improve the classification
+   accuracy.
+2. d
