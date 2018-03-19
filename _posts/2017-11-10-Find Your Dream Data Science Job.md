@@ -37,7 +37,8 @@ I scraped my data around 900 active job postings from glassdoor.com using the ke
 Findings
 
 <iframe src="https://public.tableau.com/views/Metis-Project4/FindYourDreamJobinDataScience?:embed=y&:display_count=yes&publish=yes"
- width="500" height="500"></iframe>
+frameborder="0" width="480" height="299" allowfullscreen="true"
+mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [Here is also the link to my Tableau storybook if you have trouble viewing](https://public.tableau.com/views/Metis-Project4/FindYourDreamJobinDataScience?:embed=y&:display_count=yes&publish=yes)
 
