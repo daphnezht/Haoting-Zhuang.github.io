@@ -27,10 +27,16 @@ images.
 
 In this project, the original image dataset is provided on Kaggle by
 Cdiscount.com. It consist of more than 15 million images at 180x180 resolution
-of almost 9 million products: half of the current catalogue which fall under
-more than 5000 categories. 
+of almost 9 million products (half of the current catalogue) which fall under
+more than 5000 categories (detailed categories). 
 
-Since I only have 
+Since I only have about 3 weeks to finish the project and don't have access to
+the powerful GPUs, I have sampled two sub-datasets with size of 100k images (about 1% of the original dataset).
+One subset was randomly sampled while the other one was stratified sampled based on the top level categories (I will 
+explain why I did this later). By doing this, I have simplified the original
+problem to categorizing 100k images into around 50 top level categories (both
+about 1% of the scope of original problem).
+  
 Hosted in AWS, 
 
 ## Modeling Steps   
