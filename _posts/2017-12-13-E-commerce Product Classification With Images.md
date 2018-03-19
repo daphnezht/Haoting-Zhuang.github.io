@@ -64,7 +64,8 @@ In the future, I would like to:
    original dataset and predict on more product categories.
 
 ## Project Presentaton Slides
- <iframe
-src="https://docs.google.com/presentation/d/e/2PACX-1vTOdikurq40w-BGsprz3WG3M3OHa9FKh9GlJljHdHeRAYlh8XnTkk7JaGUzTx-KYTDD6UEBkGzOZPAX/embe?start=true&loop=false&delayms=3000"
+
+<iframe
+src="https://docs.google.com/presentation/d/e/2PACX-1vTOdikurq40w-BGsprz3WG3M3OHa9FKh9GlJljHdHeRAYlh8XnTkk7JaGUzTx-KYTDD6UEBkGzOZPAX/embed?start=true&loop=false&delayms=3000"
 frameborder="0" width="480" height="299" allowfullscreen="true"
 mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
